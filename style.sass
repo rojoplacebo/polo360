@@ -1,0 +1,105 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section
+  display: block
+body
+  line-height: 1
+ol, ul
+  list-style: none
+blockquote, q
+  quotes: none
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+  //main css
+body
+  .wrapper
+    padding: 40px 0 
+    width: 940px
+    margin: 0 auto
+    header.header
+      padding-bottom: 27px
+      nav.navbar
+        display: flex
+        justify-content: space-between
+        section
+          display: flex
+          ul.menu
+            display: flex
+            justify-content: space-around
+            align-self: center
+            .item
+              padding-left: 10px 
+              margin-left: 10px 
+              border-left: 1px dashed #666
+              a
+                text-decoration: none
+                p 
+                color: #666
+                text-transform: uppercase
+                font: Georgia
+                font-size: 14px/1.2
+                font-weight: bold
+              p
+                font: Tahoma
+                font-size: 11px
+                color: #808080
+            
+    section.slider
+      // background: #1e5799
+      // background: -moz-linear-gradient(top,  #1e5799 0%, #000000 0%, #5e5e5e 100%, #207cca 100%)
+      // background: -webkit-linear-gradient(top,  #1e5799 0%,#000000 0%,#5e5e5e 100%,#207cca 100%)
+      // background: linear-gradient(to bottom,  #1e5799 0%,#000000 0%,#5e5e5e 100%,#207cca 100%)
+      .main
+        padding-top: 30px
+        border-bottom: 1px solid #ccc
+        h3
+          text-align: center
+          padding: 10px 0
+          font: Georgia
+          font-size: 24px
+          font-weight: bold
+    section.posts
+      display: flex
+      margin: 40px 0
+      padding-bottom: 20px
+      border-bottom: 1px solid #ccc
+      article
+        h4.title
+          color: #11719e
+          font: Georgia
+          font-size: 21px
+        p
+          font: Helvetica
+        img
+          margin: 20px 0
+        p.sub
+          color: #8c8c8c
+          font-size: 12px
+        p.desc
+          color: #222
+          font-size: 13px
+          line-height: 20px
+          padding-right: 20px
+    section.widgets
+      display: flex
+      flex-direction: row
+      border-bottom: 1px solid #ccc
+      section
+        flex-grow: 1
+        flex-basis: 0
+    section.footer
+      background-color: #333333
